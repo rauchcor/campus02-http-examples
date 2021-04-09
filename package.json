@@ -1,0 +1,45 @@
+{
+  "name": "campus02-http-examples",
+  "version": "1.0.0",
+  "description": "Test API for Campus02 ",
+  "engines": {
+    "node": "14.x"
+  },
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint",
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.15.2",
+    "express-basic-auth": "^1.2.0",
+    "nodemon": "^1.18.6"
+  },
+  "devDependencies": {
+    "eslint": "^5.9.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0"
+  },
+  "nodemonConfig": {
+    "restartable": "rs",
+    "ignore": [
+      "node_modules/**/node_modules"
+    ],
+    "delay": "2500",
+    "env": {
+      "NODE_ENV": "development",
+      "PORT": 4000
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rauchcor/campus02-http-examples"
+  },
+  "keywords": [
+    "campus02"
+  ],
+  "author": "Cornelia Rauch",
+  "license": "ISC"
+}
